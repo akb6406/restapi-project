@@ -1,0 +1,27 @@
+curl --location --request PUT 'https://restapi-project-1.ankitkumar578.repl.co/api/updatedtask/63e8c98f5163335fca7cc4d9' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "_id":"63e8c98f5163335fca7cc4d9",
+    "is_completed":false
+}'
+
+curl --location --request GET 'https://restapi-project-1.ankitkumar578.repl.co/api/exportAsCSV' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "task_name":"Abcd",
+    "end_Date":"22/05/2023"
+}'
+
+curl --location --request GET 'https://restapi-project-1.ankitkumar578.repl.co/api/getTasks' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "task_name":"Abcd",
+    "end_Date":"22/05/2023"
+}'
+
+curl --location --request POST 'https://restapi-project-1.ankitkumar578.repl.co/api/addTask' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "task_name":"Gajendra",
+    "end_Date":"22/05/2023"
+}'
